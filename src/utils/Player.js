@@ -399,7 +399,7 @@ export default class {
         if (!result.data[0]) return null;
         if (!result.data[0].url) return null;
         if (result.data[0].freeTrialInfo !== null) return null; // 跳过只能试听的歌曲
-        const source = result.data[0].url.replace(/^http:/, 'https:');
+        const source = result.data[0].url.replace(/^http:/, 'https:').replace(/(m\d+?)(?!c)\.music\.126\.net/, '$1c.music.126.net');
         if (store.state.settings.automaticallyCacheSongs) {
           cacheTrackSource(track, source, result.data[0].br);
         }
