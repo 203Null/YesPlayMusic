@@ -23,10 +23,9 @@
   },
   "main": "background.js",
   "engines": {
-    "node": "14 || 16 || 20"
+    "node": "14 || 16 || 18"
   },
   "dependencies": {
-    "@achrinza/node-ipc": "^9.2.7",
     "@unblockneteasemusic/rust-napi": "^0.4.0",
     "axios": "^0.26.1",
     "change-case": "^4.1.2",
@@ -80,6 +79,7 @@
     "x11": "^2.3.0"
   },
   "devDependencies": {
+    "@achrinza/node-ipc": "^9.2.7",
     "@types/node": "^17.0.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
@@ -88,7 +88,7 @@
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.9.0",
     "husky": "^4.3.0",
