@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "https://netease-cloud-music-api-flax-psi-79.vercel.app/$1"
+      "source": "/api/:match*",
+      "destination": "https://netease-cloud-music-api-flax-psi-79.vercel.app/:match*"
     }
   ]
 }
